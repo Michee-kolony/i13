@@ -3,7 +3,8 @@ const bodyparser = require('body-parser');
 const app = express();
 const mongoose = require('mongoose');
 const router = require('./routes/info');
-
+const cors = require('cors');
+app.use(cors());
 // Connexion à MongoDB
 mongoose.connect('mongodb+srv://micheekolony71:1708roosevelt@cluster0.6htgklq.mongodb.net/cluster0',
    { useNewUrlParser: true, useUnifiedTopology: true })
