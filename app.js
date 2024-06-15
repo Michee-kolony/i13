@@ -12,5 +12,5 @@ mongoose.connect('mongodb+srv://micheekolony71:1708roosevelt@cluster0.6htgklq.mo
    .catch(err => console.error('Connexion à MongoDB échouée !', err));
 app.use(express.json());
 app.use(bodyparser.json());
-app.use('/informations', router);
+app.use('/v1/informations', router);
 module.exports = app;

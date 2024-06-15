@@ -5,7 +5,7 @@ const { getall, publie, getone, deleteone, modifyone } = require('../controllers
 
 
 //route post
-router.post('/informations',publie);
+router.post('/',publie);
  
  //route get
 router.get('/',getall);
@@ -14,9 +14,9 @@ router.get('/',getall);
 router.get('/:id', getone);
  
  //route delete
-router.delete('/:id',deleteone)
+router.delete('/:id',deleteone);
  
  //modifier une information
-router.put('/:id', modifyone)
+router.put('/:id', modifyone);
 
  module.exports = router;
