@@ -37,7 +37,8 @@ exports.signin = (req, res, next)=>{
                                         {expiresIn : '24H'}
                                     ),
                                     nom:user.nom,
-                                    email:user.email
+                                    email:user.email,
+                                    createdate:user.createdate
                                 
                                 });
                             }
