@@ -36,7 +36,8 @@ exports.signin = (req, res, next)=>{
                                         'RANDOM_TOKEN_SECRET',
                                         {expiresIn : '24H'}
                                     ),
-                                    nom:user.nom
+                                    nom:user.nom,
+                                    email:user.email
                                 
                                 });
                             }
