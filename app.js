@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 const router = require('./routes/info');
 const userrouter = require('./routes/user');
+const freelancers = require('./routes/freelancers');
 const cors = require('cors');
 app.use(cors());
 // Connexion à MongoDB
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(bodyparser.json());
 //route informations
 app.use('/v1/informations', router);
+app.use('/freelancers',freelancers);
 
 //route authentifications
 app.use('/auth', userrouter);
